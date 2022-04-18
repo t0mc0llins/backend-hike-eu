@@ -16,14 +16,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   hike.init(
     {
-      title: DataTypes.STRING,
-      description: DataTypes.STRING,
-      likes: DataTypes.INTEGER,
-      distance: DataTypes.NUMBER,
-      country: DataTypes.STRING,
+      title: { type: DataTypes.STRING, allowNull: false },
+      description: { type: DataTypes.STRING, allowNull: false },
+      likes: { type: DataTypes.INTEGER, allowNull: false },
+      distance: { type: DataTypes.FLOAT, allowNull: false },
+      country: { type: DataTypes.STRING, allowNull: false },
       season: DataTypes.STRING,
-      startLocation: DataTypes.STRING,
-      endLocation: DataTypes.STRING,
+      startLocation: { type: DataTypes.STRING, allowNull: false },
+      endLocation: { type: DataTypes.STRING, allowNull: false },
     },
     {
       sequelize,

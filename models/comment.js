@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   comment.init(
     {
-      content: DataTypes.STRING,
-      likes: DataTypes.NUMBER,
+      content: { type: DataTypes.STRING, allowNull: false },
+      likes: { type: DataTypes.INTEGER, allowNull: false },
       imageUrl: DataTypes.STRING,
     },
     {

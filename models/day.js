@@ -14,10 +14,13 @@ module.exports = (sequelize, DataTypes) => {
   }
   day.init(
     {
-      description: DataTypes.STRING,
-      distance: DataTypes.NUMBER,
-      duration: DataTypes.STRING,
+      title: DataTypes.STRING,
+      description: { type: DataTypes.STRING, allowNull: false },
+      distance: { type: DataTypes.FLOAT, allowNull: false },
+      duration: { type: DataTypes.STRING, allowNull: false },
       elevation: DataTypes.INTEGER,
+      startLocation: { type: DataTypes.STRING, allowNull: false },
+      endLocation: { type: DataTypes.STRING, allowNull: false },
     },
     {
       sequelize,

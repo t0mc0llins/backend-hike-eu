@@ -13,8 +13,9 @@ module.exports = (sequelize, DataTypes) => {
   }
   stage.init(
     {
+      title: DataTypes.STRING,
       description: DataTypes.STRING,
-      distance: DataTypes.NUMBER,
+      distance: DataTypes.FLOAT,
       duration: DataTypes.STRING,
       elevation: DataTypes.INTEGER,
     },
