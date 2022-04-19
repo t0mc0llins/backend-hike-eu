@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   image.init(
     {
-      description: DataTypes.STRING,
+      description: DataTypes.TEXT,
       url: { type: DataTypes.STRING, allowNull: false },
       location: DataTypes.STRING,
     },

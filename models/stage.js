@@ -14,10 +14,12 @@ module.exports = (sequelize, DataTypes) => {
   stage.init(
     {
       title: DataTypes.STRING,
-      description: DataTypes.STRING,
-      distance: DataTypes.FLOAT,
-      duration: DataTypes.STRING,
+      description: { type: DataTypes.TEXT, allowNull: false },
+      distance: { type: DataTypes.FLOAT, allowNull: false },
+      duration: { type: DataTypes.STRING, allowNull: false },
       elevation: DataTypes.INTEGER,
+      startLocation: { type: DataTypes.STRING, allowNull: false },
+      endLocation: { type: DataTypes.STRING, allowNull: false },
     },
     {
       sequelize,

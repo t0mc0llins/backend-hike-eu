@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
   hike.init(
     {
       title: { type: DataTypes.STRING, allowNull: false },
-      description: { type: DataTypes.STRING, allowNull: false },
+      description: { type: DataTypes.TEXT, allowNull: false },
       likes: { type: DataTypes.INTEGER, allowNull: false },
       distance: { type: DataTypes.FLOAT, allowNull: false },
       country: { type: DataTypes.STRING, allowNull: false },

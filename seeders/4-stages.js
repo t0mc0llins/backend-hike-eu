@@ -1,24 +1,141 @@
-'use strict';
+"use strict";
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    await queryInterface.bulkInsert(
+      "stages",
+      [
+        {
+          title: "Medieseni to foothills",
+          description: "First ascent from town. Start by the bridge blah blah.",
+          distance: 5,
+          duration: "4",
+          elevation: 1000,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Foothills to first mountain campsite",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          distance: 10,
+          duration: "6-7",
+          elevation: 1500,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "More Romanian hiking",
+          description: "First ascent from town. Start by the bridge blah blah.",
+          distance: 5,
+          duration: "4",
+          elevation: 200,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Foothills to first mountain campsite",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          distance: 8,
+          duration: "6-7",
+          elevation: 100,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "More Romanian hiking",
+          description: "First ascent from town. Start by the bridge blah blah.",
+          distance: 5,
+          duration: "4",
+          elevation: 700,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Foothills to first mountain campsite",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          distance: 3,
+          duration: "6-7",
+          elevation: 800,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "More Romanian hiking",
+          description: "First ascent from town. Start by the bridge blah blah.",
+          distance: 7,
+          duration: "4",
+          elevation: 100,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 4,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Foothills to first mountain campsite",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          distance: 5,
+          duration: "6-7",
+          elevation: 200,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 4,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Ben Nevis",
+          description: "First ascent from town. Start by the bridge blah blah.",
+          distance: 4,
+          duration: "4",
+          elevation: 300,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 5,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Back down again",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          distance: 5,
+          duration: "6-7",
+          elevation: 500,
+          startLocation: "some place",
+          endLocation: "other place",
+          dayId: 5,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
-  }
+    await queryInterface.bulkDelete("stages", null, {});
+  },
 };

@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   day.init(
     {
       title: DataTypes.STRING,
-      description: { type: DataTypes.STRING, allowNull: false },
+      description: { type: DataTypes.TEXT, allowNull: false },
       distance: { type: DataTypes.FLOAT, allowNull: false },
       duration: { type: DataTypes.STRING, allowNull: false },
       elevation: DataTypes.INTEGER,
