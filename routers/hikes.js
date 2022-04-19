@@ -6,7 +6,7 @@ const router = new Router();
 
 router.get("/", async (req, res) => {
   try {
-    const hikes = await Hike.findAll({ include: Image });
+    const hikes = await Hike.findAll();
     if (!hikes) {
       res.status(404).send("No hikes found");
       return;

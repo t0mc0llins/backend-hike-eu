@@ -44,6 +44,11 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
+      coverImage: { type: Sequelize.STRING },
+      mapImage: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,

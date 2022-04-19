@@ -25,6 +25,8 @@ module.exports = (sequelize, DataTypes) => {
       startLocation: { type: DataTypes.STRING, allowNull: false },
       endLocation: { type: DataTypes.STRING, allowNull: false },
       badgeIds: DataTypes.ARRAY(DataTypes.INTEGER),
+      coverImage: DataTypes.STRING,
+      mapImage: { type: DataTypes.STRING, allowNull: false },
     },
     {
       sequelize,
