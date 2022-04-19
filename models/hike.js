@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       season: DataTypes.STRING,
       startLocation: { type: DataTypes.STRING, allowNull: false },
       endLocation: { type: DataTypes.STRING, allowNull: false },
+      badgeIds: DataTypes.ARRAY(DataTypes.INTEGER),
     },
     {
       sequelize,

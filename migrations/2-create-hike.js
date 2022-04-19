@@ -39,6 +39,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      badgeIds: { type: Sequelize.ARRAY(Sequelize.INTEGER) },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
