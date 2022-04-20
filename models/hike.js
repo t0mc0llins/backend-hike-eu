@@ -20,8 +20,11 @@ module.exports = (sequelize, DataTypes) => {
       description: { type: DataTypes.TEXT, allowNull: false },
       likes: { type: DataTypes.INTEGER, allowNull: false },
       distance: { type: DataTypes.FLOAT, allowNull: false },
-      country: { type: DataTypes.STRING, allowNull: false },
-      season: DataTypes.STRING,
+      countryRef: { type: DataTypes.INTEGER, allowNull: false },
+      seasonRefs: {
+        type: DataTypes.ARRAY(DataTypes.INTEGER),
+        allowNull: false,
+      },
       startLocation: { type: DataTypes.STRING, allowNull: false },
       endLocation: { type: DataTypes.STRING, allowNull: false },
       badgeIds: DataTypes.ARRAY(DataTypes.INTEGER),

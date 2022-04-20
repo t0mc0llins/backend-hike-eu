@@ -24,12 +24,13 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      country: {
-        type: Sequelize.STRING,
+      countryRef: {
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
-      season: {
-        type: Sequelize.STRING,
+      seasonRefs: {
+        type: Sequelize.ARRAY(Sequelize.INTEGER),
+        allowNull: false,
       },
       startLocation: {
         type: Sequelize.STRING,

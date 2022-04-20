@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       elevation: DataTypes.INTEGER,
       startLocation: { type: DataTypes.STRING, allowNull: false },
       endLocation: { type: DataTypes.STRING, allowNull: false },
+      stageOrder: { type: DataTypes.INTEGER, allowNull: false },
     },
     {
       sequelize,
