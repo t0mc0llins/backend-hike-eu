@@ -25,7 +25,7 @@ module.exports = {
         allowNull: false,
       },
       countryRef: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       seasonRefs: {
