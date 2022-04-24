@@ -3,6 +3,7 @@ const Hike = require("../models").hike;
 const Day = require("../models").day;
 const Stage = require("../models").stage;
 const Comment = require("../models").comment;
+const Map = require("../models").map;
 
 const router = new Router();
 
@@ -24,7 +25,7 @@ router.get("/:id", async (req, res) => {
   try {
     const id = req.params.id;
     const hike = await Hike.findByPk(id, {
-      include: [Comment, { model: Day, include: [Stage] }],
+      include: [Comment, Map, { model: Day, include: [Stage] }],
     });
 
     if (!hike) {

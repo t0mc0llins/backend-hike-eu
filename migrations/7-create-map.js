@@ -8,20 +8,20 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      maxZoom: {
+      minZoom: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
       maxBoundLat: {
-        type: Sequelize.ARRAY(Sequelize.DOUBLE),
+        type: Sequelize.ARRAY(Sequelize.FLOAT),
         allowNull: false,
       },
       maxBoundLng: {
-        type: Sequelize.ARRAY(Sequelize.DOUBLE),
+        type: Sequelize.ARRAY(Sequelize.FLOAT),
         allowNull: false,
       },
       center: {
-        type: Sequelize.ARRAY(Sequelize.DOUBLE),
+        type: Sequelize.ARRAY(Sequelize.FLOAT),
         allowNull: false,
       },
       createdAt: {

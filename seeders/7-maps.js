@@ -6,7 +6,7 @@ module.exports = {
       "maps",
       [
         {
-          maxZoom: 5,
+          minZoom: 10,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -15,7 +15,7 @@ module.exports = {
           hikeId: 1,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -24,7 +24,7 @@ module.exports = {
           hikeId: 2,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -33,7 +33,7 @@ module.exports = {
           hikeId: 3,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -42,7 +42,7 @@ module.exports = {
           hikeId: 4,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -51,7 +51,7 @@ module.exports = {
           hikeId: 5,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -60,7 +60,7 @@ module.exports = {
           hikeId: 6,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -69,7 +69,7 @@ module.exports = {
           hikeId: 7,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],
@@ -78,7 +78,7 @@ module.exports = {
           hikeId: 8,
         },
         {
-          maxZoom: 5,
+          minZoom: 5,
           maxBoundLat: [45.600743, 24.52867],
           maxBoundLng: [45.569178, 24.587386],
           center: [45.580669, 24.558188],

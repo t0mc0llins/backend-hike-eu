@@ -13,16 +13,16 @@ module.exports = (sequelize, DataTypes) => {
   }
   map.init(
     {
-      maxZoom: { type: DataTypes.INTEGER, allowNull: false },
+      minZoom: { type: DataTypes.INTEGER, allowNull: false },
       maxBoundLat: {
-        type: DataTypes.ARRAY(DataTypes.DOUBLE),
+        type: DataTypes.ARRAY(DataTypes.FLOAT),
         allowNull: false,
       },
       maxBoundLng: {
-        type: DataTypes.ARRAY(DataTypes.DOUBLE),
+        type: DataTypes.ARRAY(DataTypes.FLOAT),
         allowNull: false,
       },
-      center: { type: DataTypes.ARRAY(DataTypes.DOUBLE), allowNull: false },
+      center: { type: DataTypes.ARRAY(DataTypes.FLOAT), allowNull: false },
     },
     {
       sequelize,
