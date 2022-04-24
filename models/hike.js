@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       hike.hasMany(models.image);
       hike.hasMany(models.day);
       hike.hasMany(models.comment);
+      hike.hasOne(models.map);
     }
   }
   hike.init(

@@ -62,6 +62,16 @@ module.exports = {
       onUpdate: "CASCADE",
       onDelete: "SET NULL",
     });
+    await queryInterface.addColumn("maps", "hikeId", {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      references: {
+        model: "hikes",
+        key: "id",
+      },
+      onUpdate: "CASCADE",
+      onDelete: "SET NULL",
+    });
   },
 
   down: async (queryInterface, Sequelize) => {
@@ -71,5 +81,6 @@ module.exports = {
     await queryInterface.removeColumn("hikes", "userId");
     await queryInterface.removeColumn("days", "hikeId");
     await queryInterface.removeColumn("stages", "dayId");
+    await queryInterface.removeColumn("maps", "hikeId");
   },
 };
