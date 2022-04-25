@@ -14,15 +14,16 @@ module.exports = (sequelize, DataTypes) => {
   map.init(
     {
       minZoom: { type: DataTypes.INTEGER, allowNull: false },
-      maxBoundLat: {
+      maxBoundSouthWest: {
         type: DataTypes.ARRAY(DataTypes.FLOAT),
         allowNull: false,
       },
-      maxBoundLng: {
+      maxBoundNorthEast: {
         type: DataTypes.ARRAY(DataTypes.FLOAT),
         allowNull: false,
       },
       center: { type: DataTypes.ARRAY(DataTypes.FLOAT), allowNull: false },
+      polylineArr: { type: DataTypes.JSON, allowNull: false },
     },
     {
       sequelize,

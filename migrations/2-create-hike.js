@@ -20,10 +20,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      distance: {
-        type: Sequelize.FLOAT,
-        allowNull: false,
-      },
       countryRef: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -41,14 +37,10 @@ module.exports = {
         allowNull: false,
       },
       badgeIds: { type: Sequelize.ARRAY(Sequelize.INTEGER) },
+      coverImage: { type: Sequelize.STRING },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-      },
-      coverImage: { type: Sequelize.STRING },
-      mapImage: {
-        type: Sequelize.STRING,
-        allowNull: false,
       },
       updatedAt: {
         allowNull: false,

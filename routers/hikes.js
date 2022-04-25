@@ -40,4 +40,83 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.post("/create", async (req, res) => {
+  try {
+    const {
+      title,
+      description,
+      countryRef,
+      seasonRefs,
+      startLocation,
+      endLocation,
+      badgeIds,
+      coverImage,
+    } = req.body;
+    if (
+      !title ||
+      !description ||
+      !countryRef ||
+      !seasonRefs ||
+      !startLocation ||
+      !endLocation ||
+      !badgeIds ||
+      !coverImage
+    ) {
+      res.status(400).send("Incomplete hike generation request.");
+      return;
+    }
+    const hike = await Hike.create({
+      title,
+      description,
+      likes: 0,
+      countryRef,
+      seasonRefs,
+      startLocation,
+      endLocation,
+      badgeIds,
+      coverImage,
+    });
+    res.send(hike);
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).send("Server error");
+  }
+});
+
+router.post("/create/map", async (req, res) => {
+  try {
+    const {
+      minZoom,
+      maxBoundSouthWest,
+      maxBoundNorthEast,
+      center,
+      polylineArr,
+      hikeId,
+    } = req.body;
+    if (
+      !minZoom ||
+      !maxBoundSouthWest ||
+      !maxBoundNorthEast ||
+      !center ||
+      !polylineArr ||
+      !hikeId
+    ) {
+      res.status(400).send("Incomplete map generation request.");
+      return;
+    }
+    const map = await Map.create({
+      minZoom,
+      maxBoundSouthWest,
+      maxBoundNorthEast,
+      center,
+      polylineArr: JSON.stringify(polylineArr),
+      hikeId,
+    });
+    res.send(map);
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).send("Server error");
+  }
+});
+
 module.exports = router;

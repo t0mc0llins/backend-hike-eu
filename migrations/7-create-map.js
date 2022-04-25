@@ -12,11 +12,11 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      maxBoundLat: {
+      maxBoundSouthWest: {
         type: Sequelize.ARRAY(Sequelize.FLOAT),
         allowNull: false,
       },
-      maxBoundLng: {
+      maxBoundNorthEast: {
         type: Sequelize.ARRAY(Sequelize.FLOAT),
         allowNull: false,
       },
@@ -24,6 +24,7 @@ module.exports = {
         type: Sequelize.ARRAY(Sequelize.FLOAT),
         allowNull: false,
       },
+      polylineArr: { type: Sequelize.JSON },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
