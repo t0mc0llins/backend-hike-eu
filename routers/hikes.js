@@ -51,6 +51,7 @@ router.post("/create", async (req, res) => {
       endLocation,
       badgeIds,
       coverImage,
+      userId,
     } = req.body;
     if (
       !title ||
@@ -59,7 +60,6 @@ router.post("/create", async (req, res) => {
       !seasonRefs ||
       !startLocation ||
       !endLocation ||
-      !badgeIds ||
       !coverImage
     ) {
       res.status(400).send("Incomplete hike generation request.");
@@ -75,6 +75,7 @@ router.post("/create", async (req, res) => {
       endLocation,
       badgeIds,
       coverImage,
+      userId,
     });
     res.send(hike);
   } catch (e) {
