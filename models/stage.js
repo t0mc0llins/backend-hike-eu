@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       description: { type: DataTypes.TEXT, allowNull: false },
       distance: { type: DataTypes.FLOAT, allowNull: false },
-      duration: { type: DataTypes.STRING, allowNull: false },
+      duration: { type: DataTypes.FLOAT, allowNull: false },
       elevation: DataTypes.INTEGER,
       startLocation: { type: DataTypes.STRING, allowNull: false },
       endLocation: { type: DataTypes.STRING, allowNull: false },

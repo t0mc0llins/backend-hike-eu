@@ -20,7 +20,7 @@ module.exports = {
         allowNull: false,
       },
       duration: {
-        type: Sequelize.STRING,
+        type: Sequelize.FLOAT,
         allowNull: false,
       },
       elevation: {
