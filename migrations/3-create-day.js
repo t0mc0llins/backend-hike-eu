@@ -13,26 +13,6 @@ module.exports = {
       },
       description: {
         type: Sequelize.TEXT,
-        allowNull: false,
-      },
-      distance: {
-        type: Sequelize.FLOAT,
-        allowNull: false,
-      },
-      duration: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      elevation: {
-        type: Sequelize.INTEGER,
-      },
-      startLocation: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      endLocation: {
-        type: Sequelize.STRING,
-        allowNull: false,
       },
       dayOrder: {
         type: Sequelize.INTEGER,
