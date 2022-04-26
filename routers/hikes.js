@@ -120,4 +120,69 @@ router.post("/create/map", async (req, res) => {
   }
 });
 
+router.post("/create/day", async (req, res) => {
+  try {
+    const { title, description, dayOrder, hikeId } = req.body;
+    if (!title || !description || !dayOrder || !hikeId) {
+      res.status(400).send("Incomplete day generation request.");
+      return;
+    }
+    const day = await Day.create({
+      title,
+      description,
+      dayOrder,
+      hikeId,
+    });
+    res.send(day);
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).send("Server error");
+  }
+});
+
+router.post("/create/stage", async (req, res) => {
+  try {
+    const {
+      title,
+      description,
+      distance,
+      duration,
+      elevation,
+      startLocation,
+      endLocation,
+      stageOrder,
+      dayId,
+    } = req.body;
+    if (
+      !title ||
+      !description ||
+      !distance ||
+      !duration ||
+      !elevation ||
+      !startLocation ||
+      !endLocation ||
+      !stageOrder ||
+      !dayId
+    ) {
+      res.status(400).send("Incomplete stage generation request.");
+      return;
+    }
+    const stage = await Stage.create({
+      title,
+      description,
+      distance,
+      duration,
+      elevation,
+      startLocation,
+      endLocation,
+      stageOrder,
+      dayId,
+    });
+    res.send(stage);
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).send("Server error");
+  }
+});
+
 module.exports = router;
