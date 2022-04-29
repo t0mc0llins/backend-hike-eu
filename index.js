@@ -4,9 +4,11 @@ const authMiddleWare = require("./auth/middleware");
 const authRouter = require("./routers/auth");
 const hikeRouter = require("./routers/hikes");
 const { PORT } = require("./config/constants");
+const cors = require("cors");
 
 const app = express();
 
+app.use(cors());
 app.use(corsMiddleWare());
 
 const bodyParserMiddleWare = express.json();
