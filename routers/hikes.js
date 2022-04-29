@@ -4,6 +4,7 @@ const Day = require("../models").day;
 const Stage = require("../models").stage;
 const Comment = require("../models").comment;
 const Map = require("../models").map;
+const authMiddleware = require("../auth/middleware");
 
 const router = new Router();
 
@@ -40,7 +41,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/create", async (req, res) => {
+router.post("/create", authMiddleware, async (req, res) => {
   try {
     const {
       title,
@@ -84,7 +85,7 @@ router.post("/create", async (req, res) => {
   }
 });
 
-router.post("/create/map", async (req, res) => {
+router.post("/create/map", authMiddleware, async (req, res) => {
   try {
     const {
       minZoom,
@@ -120,7 +121,7 @@ router.post("/create/map", async (req, res) => {
   }
 });
 
-router.post("/create/day", async (req, res) => {
+router.post("/create/day", authMiddleware, async (req, res) => {
   try {
     const { title, description, dayOrder, hikeId } = req.body;
     if (!title || !description || !dayOrder || !hikeId) {
@@ -140,7 +141,7 @@ router.post("/create/day", async (req, res) => {
   }
 });
 
-router.post("/create/stage", async (req, res) => {
+router.post("/create/stage", authMiddleware, async (req, res) => {
   try {
     const {
       title,
