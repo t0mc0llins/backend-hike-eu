@@ -50,6 +50,105 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 4,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 2,
+          hikeId: 4,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 5,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 6,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 7,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 2,
+          hikeId: 7,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 3,
+          hikeId: 7,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 8,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 1,
+          hikeId: 9,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Lorem ipsum",
+          description:
+            "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+          dayOrder: 2,
+          hikeId: 9,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
