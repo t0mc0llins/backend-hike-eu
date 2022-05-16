@@ -10,4 +10,4 @@ The backend is a simple REST api written in Node.js.
 
 [Here](https://github.com/t0mc0llins/frontend-hike-eu) is a link to the Hike EU client repository which has a demo of the app in action.
 
-[Here](https://hike-eu.netlify.app/) is a link to the deployed app. You can login with email: test@test.com and password: test1234 if you would like to try out the hiking route creation features.
+[This](https://hike-eu.netlify.app/) is a link to the deployed app. You can login with email: test@test.com and password: test1234 if you would like to try out the hiking route creation features.
