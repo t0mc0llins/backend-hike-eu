@@ -86,14 +86,14 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          title: "Peleaga Peak Trail, Retzat",
+          title: "Peleaga Peak Trail, Retezat",
           description:
-            "As the tallest summit in the park, reaching the peak is one of the most common challenging hikes in the Retzat Mountains",
+            "As the tallest summit in the park, reaching the peak is one of the most common challenging hikes in the Retezat Mountains",
           likes: 2,
           countryRef: "RO",
           seasonRefs: [1],
-          startLocation: "Deva campsite",
-          endLocation: "Retzat town",
+          startLocation: "Rausor complex",
+          endLocation: "Capul complex",
           badgeIds: [0, 2],
           coverImage:
             "https://www.walkopedia.net/assets/walkimages/2624/Retezat_View_over_Bucura_lake-wikimediacommons-DanielIghisan.jpg",
